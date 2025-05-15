@@ -16,19 +16,17 @@
       </p>
     </div>
     <div class="content">
-      <button
-        onclick="document.getElementById('bulb').src='./Images/ON Light.png'"
-        class="btn"
-      >
-        ON LIGHT
-      </button>
+      <button onclick="onBulb()" class="btn">ON LIGHT</button>
       <img id="bulb" src="./Images/OFF Light.png" alt="off-light" width="25%" />
-      <button
-        onclick="document.getElementById('bulb').src='./Images/OFF Light.png'"
-        class="btn"
-      >
-        OFF LIGHT
-      </button>
+      <button onclick="offBulb()" class="btn">OFF LIGHT</button>
     </div>
+    <script>
+      function onBulb() {
+        document.getElementById("bulb").src = "./Images/ON Light.png";
+      }
+      function offBulb() {
+        document.getElementById("bulb").src = "./Images/OFF Light.png";
+      }
+    </script>
   </body>
 </html>
